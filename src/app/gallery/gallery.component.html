@@ -1,0 +1,13 @@
+<h3 class="typeImage">{{ typeImage }}</h3>
+<ngb-carousel class="carusel" *ngIf="dataImages" [interval]="3000" >
+  <ng-template ngbSlide *ngFor="let image of dataImages['hits']">
+    <p>{{image.tags}}</p>
+    <div >
+      <img [src]="image.webformatURL" alt="Random slide" />
+    </div>
+    <div class="carousel-caption">
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+

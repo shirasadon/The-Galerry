@@ -1,0 +1,23 @@
+<button
+  type="button"
+  (click)="callShowConfig('sports')"
+  class="btn btn-outline-danger"
+>
+  sports
+</button>
+<button
+  type="button"
+  (click)="callShowConfig('food')"
+  class="btn btn-outline-danger"
+>
+  food
+</button>
+<button
+  type="button"
+  (click)="callShowConfig('music')"
+  class="btn btn-outline-danger"
+>
+  music
+</button>
+
+<app-gallery [typeImage]="type"></app-gallery>
